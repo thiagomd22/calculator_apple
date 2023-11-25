@@ -77,7 +77,6 @@ html, body #fullheight {
 .item1 {
     background-color: #A5A5A5;
     border: none;
-    
 }
 
 .item3 {
@@ -96,6 +95,19 @@ html, body #fullheight {
 
 .itemZero {
     background-color: #343434;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
     width: 130px;
     border-radius: 135px;
     grid-column: span 2;
