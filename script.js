@@ -65,4 +65,52 @@ equals.addEventListener('click', () => {
     firstValue = resultValue;
     secondValue = "";
 
+    checkResultLenght();
+
+})
+
+function checkResultLenght() {
+    resultValue = JSON.stringify(resultValue);
+
+    if(resultValue.length >= 8) {
+        resultValue = JSON.parse(resultValue);
+        result.innerHTML = resultValue.toFixed(5);
+    }
+}
+
+negative.addEventListener('click', () => {
+    result.innerHTML = "";
+    if(firstValue != "") {
+        resultValue = -firstValue;
+        firstValue = resultValue;
+    }
+    if(firstValue != "" && secondValue != "" && sign != "") {
+        resultValue = -resultValue;
+    }
+
+    result.innerHTML = resultValue;
+})
+
+percent.addEventListener('click', () => {
+    result.innerHTML = "";
+    if(firstValue != "") {
+        resultValue = firstValue / 100;
+        firstValue = resultValue;
+    }
+    if(firstValue != "" && secondValue != "" && sign != "") {
+        resultValue = resultValue / 100;
+    }
+
+    result.innerHTML = resultValue;
+})
+
+clear.addEventListener('click', () => {
+    result.innerHTML = 0;
+
+    firstValue = "";
+    isFirstValue = false;
+    secondValue = "";
+    isSecondValue = false;
+    sign = "";
+    resultValue = 0;
 })
