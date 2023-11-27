@@ -6,7 +6,6 @@ const clear = document.querySelector('.clear');
 const negative = document.querySelector('.negative');
 const percent = document.querySelector('.percent');
 
-
 let firstValue = "";
 let isFirstValue = false;
 let secondValue = "";
@@ -20,7 +19,7 @@ for(let i = 0; i < numbers.length; i++) {
         if(isFirstValue === false) {
             getFirstValue(atr)
         }
-        if(isSecondValue === false) {
+        if(isSecondValue == false) {
             getSecondValue(atr)
         }
     })
@@ -63,5 +62,7 @@ equals.addEventListener('click', () => {
         resultValue = firstValue / secondValue;
     }
     result.innerHTML = resultValue;
+    firstValue = resultValue;
+    secondValue = "";
 
 })
