@@ -1,7 +1,7 @@
 const numbers = document.querySelectorAll('.numbers');
 const result = document.querySelector('.result');
 const signs = document.querySelectorAll('.sign');
-const equals = document.querySelector('equals');
+const equals = document.querySelector('.equals');
 const clear = document.querySelector('.clear');
 const negative = document.querySelector('.negative');
 const percent = document.querySelector('.percent');
@@ -63,5 +63,5 @@ equals.addEventListener('click', () => {
         resultValue = firstValue / secondValue;
     }
     result.innerHTML = resultValue;
-    
+
 })
