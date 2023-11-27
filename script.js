@@ -7,3 +7,13 @@ let secondValue = "";
 let isSecondValue = false;
 let sign = "";
 let resultValue = "";
+
+for(let i = 0; i < numbers.length; i++) {
+    numbers[i].addEventListener('click', (e) => {
+        let atr = e.target.getAttribute('value');
+        if(isFirstValue === false) {
+            getFirstValue(atr)
+        }
+    })
+}
+
