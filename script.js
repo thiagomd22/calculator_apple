@@ -41,3 +41,27 @@ function getSecondValue(el) {
     }
 }
 
+function getSign() {
+    for(let i = 0; i < signs.length; i++) {
+        signs[i].addEventListener('click', (e) => {
+            sign = e.target.getAttribute('value');
+            isFirstValue = true;
+        })
+    }
+}
+getSign();
+
+equals.addEventListener('click', () => {
+    result.innerHTML = "";
+    if(sign === "+") {
+        resultValue = firstValue + secondValue;
+    } else if (sign === "-") {
+        resultValue = firstValue - secondValue;
+    } else if (sign === "x") {
+        resultValue = firstValue * secondValue;
+    } else if (sign === "/") {
+        resultValue = firstValue / secondValue;
+    }
+    result.innerHTML = resultValue;
+    
+})
