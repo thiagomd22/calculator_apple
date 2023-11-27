@@ -1,5 +1,5 @@
 const numbers = document.querySelectorAll('.numbers');
-const result = document.querySelector('.result');
+const result = document.querySelector('.result span');
 const signs = document.querySelectorAll('.sign');
 const equals = document.querySelector('.equals');
 const clear = document.querySelector('.clear');
@@ -12,7 +12,7 @@ let isFirstValue = false;
 let secondValue = "";
 let isSecondValue = false;
 let sign = "";
-let resultValue = "";
+let resultValue = 0;
 
 for(let i = 0; i < numbers.length; i++) {
     numbers[i].addEventListener('click', (e) => {
