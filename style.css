@@ -74,9 +74,19 @@ html, body #fullheight {
     color: black;
 }
 
+.percent:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
 .item1 {
     background-color: #A5A5A5;
     border: none;
+}
+
+.item1:hover {
+    background-color: white;
+    transition: 0.5s;
 }
 
 .item3 {
@@ -84,9 +94,20 @@ html, body #fullheight {
     border: none;
 }
 
+.item3:hover{
+    background-color: white;
+    color: #FF9F02;
+    transition: 0.5s;
+}
+
 .numbers, .comma {
     background-color: #343434;
     border: none;
+}
+
+.numbers:hover {
+    background-color: #696969;
+    transition: 0.3s;
 }
 
 .negative, .clear {
